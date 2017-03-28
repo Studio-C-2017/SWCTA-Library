@@ -6,6 +6,7 @@ Open the index.html file in any modern web browser.
 
 # Authors
 - Kenny Weeks
+- LJ Aligaen
 - (Insert your name here)
 
 # License
