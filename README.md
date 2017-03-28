@@ -7,6 +7,7 @@ Open the index.html file in any modern web browser.
 # Authors
 - Kenny Weeks
 - LJ Aligaen
+- Natalia Lopez
 - (Insert your name here)
 
 # License
