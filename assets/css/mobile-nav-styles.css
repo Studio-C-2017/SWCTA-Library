@@ -1,0 +1,84 @@
+#mobile-header, #nav-button {
+    height: 48pt;
+    overflow: hidden;
+}
+
+#mobile-header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 100;
+    background-color: #0068b3;
+}
+
+#nav-button {
+    width: 48pt;
+    background-color: #0068b3;
+    background-image: url(../img/nav-button.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#nav-button:hover {
+    /*background-image: url(../img/nav-button-reverse.svg);*/
+}
+
+@media (max-width: 650px) {
+
+    /* Makes #mobile-header visible */
+    #mobile-header {
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    #nav-button-container, nav {
+        width: 250px;
+        transition: transform 0.33s;
+    }
+
+    main {
+        margin-top: 48pt;
+    }
+    
+    nav {
+        z-index: 100;
+        display: block;
+        left: -250px;
+        top: 0;
+        margin: 0;
+        position: fixed;
+        height: 100vh;
+        color: #0068b3;
+        background-color: #ededed;
+        overflow: scroll;
+        box-sizing: border-box;
+    }
+
+    nav ul {
+        display: block;
+        padding: 0;
+        margin-top: 18pt;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        box-sizing: border-box;
+        display: block;
+        font-size: 24pt;
+        text-align: left;
+        padding: 12pt;
+        width: 100%;
+    }
+
+    nav ul li a:hover {
+
+    }
+}
