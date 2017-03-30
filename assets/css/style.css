@@ -2,4 +2,89 @@
  * Studio C Library Website
  */
 
- @charset "UTF-8";
+/*================
+Table of Contents
+1. initial styles
+2. universal styles
+3. nav styles
+4. homepage styles
+5. about styles
+6. team styles
+7. work styles
+8. contact styles
+================*/
+
+/*================
+initial styles
+================*/
+@charset "UTF-8";
+
+body {
+}
+
+/*================
+universal styles BE CAREFUL
+================*/
+
+footer {
+}
+/*================
+mobile-header styles
+================*/
+
+#mobile-header {
+}
+
+/*================
+nav styles DO NOT CHANGE
+================*/
+
+nav {
+}
+
+nav ul {
+}
+
+nav li {
+}
+
+nav li a {
+}
+
+nav li a:hover {
+}
+
+
+/*================
+homepage styles
+================*/
+
+header {
+}
+
+
+
+/*================
+about styles
+================*/
+
+
+
+/*================
+college styles
+================*/
+
+
+/*================
+Resources styles
+================*/
+
+
+/*
+
+
+*/
+/*================
+course-help styles
+================*/
+
