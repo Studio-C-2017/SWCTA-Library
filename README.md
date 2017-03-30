@@ -8,6 +8,7 @@ Open the index.html file in any modern web browser.
 - Kenny Weeks
 - LJ Aligaen
 - Natalia Lopez
+- Addison Sorca 
 - (Insert your name here)
 
 # License
