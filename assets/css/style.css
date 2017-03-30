@@ -27,6 +27,31 @@ universal styles BE CAREFUL
 ================*/
 
 footer {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/*================
+site-header styles
+================*/
+#site-header {
+    display: flex;
+    height: 125px;
+}
+
+#site-header img {
+    height: 100%;
+}
+
+#site-header h1 {
+
+}
+
+#site-header #hours {
 }
 /*================
 mobile-header styles
@@ -40,15 +65,24 @@ nav styles DO NOT CHANGE
 ================*/
 
 nav {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 nav ul {
+    display: flex;
+    margin: 0;
 }
 
 nav li {
+    display: block;
+    text-align: center;
 }
 
 nav li a {
+    padding: 8pt;
+    display: block;
+    text-decoration: none;
 }
 
 nav li a:hover {
@@ -87,4 +121,3 @@ Resources styles
 /*================
 course-help styles
 ================*/
-
