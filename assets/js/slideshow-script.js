@@ -1,3 +1,9 @@
+/*
+ * Created by Addison C. Quijano Sorca
+ * acqsorca.github.io
+ * Licensed under CC BY 4.0
+ */
+
 function main() {
     // BEGIN slideshow
     var slideshow = document.getElementById("slideshow"),
@@ -21,15 +27,15 @@ function main() {
         for (i = 0; i < slides.length; i += 1) {
             slides[i].style.width = slideshowWidth + "px";
         }
-        
+
         slideWidth = slideshowWidth;
         return slideshowWidth;
     }
-    
+
     resizeSlides();
-    
+
     window.addEventListener("resize", resizeSlides);
-    
+
     // Puts shift into slideshow style
     // Puts value of shift into the style of the carousel
     function shifter(shiftSize) {
