@@ -19,7 +19,10 @@ initial styles
 ================*/
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
 body {
+    font-family: 'Signika', sans-serif;
 }
 
 /*================

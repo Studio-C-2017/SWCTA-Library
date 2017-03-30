@@ -49,6 +49,7 @@ function main() {
 
     // Changes the icon of a slide to the unselected icon
     function resetIcon(currentSl) {
+        console.log(slideIcons[currentSl]);
         slideIcons[currentSl].style.backgroundImage = unselectedIconImage;
     }
 
@@ -86,6 +87,7 @@ function main() {
 
     // Adds event listeners to the each icon
     // so that the carousel will shift to the icon's respective slide
+
     while (i <= numberOfSlides) {
         slideIcons[i].addEventListener("click", function () {
             resetIcon(currentSlide);
