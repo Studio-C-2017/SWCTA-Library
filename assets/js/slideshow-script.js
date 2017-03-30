@@ -32,10 +32,6 @@ function main() {
         return slideshowWidth;
     }
 
-    resizeSlides();
-
-    window.addEventListener("resize", resizeSlides);
-
     // Puts shift into slideshow style
     // Puts value of shift into the style of the carousel
     function shifter(shiftSize) {
@@ -51,6 +47,7 @@ function main() {
         resetTimer();
     }
 
+    // Changes the icon of a slide to the unselected icon
     function resetIcon(currentSl) {
         slideIcons[currentSl].style.backgroundImage = unselectedIconImage;
     }
@@ -75,25 +72,36 @@ function main() {
         }
     }
 
+
+    /* END slideshow functions */
+
+    // Creates a timer
     var timerId = window.setInterval(leftShift, 5000);
 
+    // Resets timer when called
     function resetTimer() {
         clearInterval(timerId);
         timerId = window.setInterval(leftShift, 5000);
     }
 
-    function setIcon(wantedSlide) {
-        slideIcons[wantedSlide].addEventListener("click", function () {
-            resetIcon(currentSlide);
-            shiftToSlide(wantedSlide);
-            this.style.backgroundImage = selectedIconImage;
-        });
-    }
-
+    // Adds event listeners to the each icon
+    // so that the carousel will shift to the icon's respective slide
     while (i <= numberOfSlides) {
-        setIcon(i);
+        slideIcons[i].addEventListener("click", function () {
+            resetIcon(currentSlide);
+            shiftToSlide(i);
+            slideIcons[i].style.backgroundImage = selectedIconImage;
+        });
         i += 1;
     }
+
+
+    // This is where we call our functions
+
+    // Make sure our slides are the proper width (100%)
+    resizeSlides();
+
+    window.addEventListener("resize", resizeSlides);
 
     slideIcons[0].style.backgroundImage = selectedIconImage;
 
