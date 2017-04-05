@@ -124,3 +124,10 @@ Resources styles
 /*================
 course-help styles
 ================*/
+
+
+
+/* From Studio C 2013 */
+#linkList li dl dd {
+display: none;
+}

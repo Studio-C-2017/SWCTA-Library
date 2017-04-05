@@ -10,11 +10,9 @@
         <link rel="stylesheet" type="text/css" href="assets/css/mobile-nav-style.css" />
         <link rel="shortcut icon" type="image/png" href="icon.png" />
 
-    	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
-
-
-    	<link rel="stylesheet" href="assets/css/1140.css" type="text/css" media="screen" />
-
+        <!-- Note from Studio C 2017:
+        The following scripts come from the Studio C 2013 version of the site. It's in charge of the dropdowns on the resources page.
+        We're not completely sure how it works. -->
     	<script src="assets/js/jquery.js"></script>
     	<script>
     		$(document).ready(function(){
@@ -24,14 +22,22 @@
     			});
     		});
     	</script>
-    	<script type="text/javascript" src="assets/js/script1.js"></script>
+    	<script type="text/javascript" src="assets/js/dropdowns.js"></script>
+
     </head>
 
     <body>
 
-        <header>
-
-
+        <header id="site-header">
+            <img src="assets/img/SWCTA-Logo.png" alt="SWCTA Logo" />
+            <h1>Welcome to the Library</h1>
+            <div id="hours">
+                <h2>Hours</h2>
+                Monday - Thursday
+                6:30AM - 4:00PM
+                Friday
+                6:30AM - 2:00PM
+            </div>
         </header>
 
         <nav>
@@ -44,24 +50,6 @@
         </nav>
 
         <main>
-            <div class="resources">
-            	<h1>HOURS</h1>
-            	<p style="font-size:24pt;text-align:center;">Monday through Thursday <br>
-            	6:30 am - 4:00 pm</p>
-            	<p style="font-size:24pt;text-align:center;">Friday</p>
-            	<p style="font-size:24pt;text-align:center;">6:30 am - 2:00 pm</p>
-            	<br>
-            	Hours may change without prior notice. <!-- Please check our <a id="twitterLink" href="https://twitter.com/swctalibrary" target="_blank">twitter</a> for updates. -->
-            </div>
-            <div class="about">
-            	<h1>ABOUT</h1>
-            		<div class="aboutContent">
-            			<p>
-            				The SWCTA library is about providing a place to students where they can learn, grow, and become smarter and more productive. Our library is filled to the brim with books and other resources that cover a large range of topics in order to help students learn and gain knowledge. Some of the other resources we have at the library are: a computer lab, a pay to use print system, tables in order for students to work on during lunch and after school, and much more. The SWCTA library is an extension of the classroom and is focused on making student’s time in the library worthwhile.
-
-            			</p>
-            		</div>
-            	</div>
             	<div class="resources">
             		<h1>RESOURCES</h1>
             		<div class="links">
@@ -150,9 +138,6 @@
             		  Password:	ccsd2
                     </div>
                   </div>
-
-
-
             			</div>
             		</div>
             		<div id="database">

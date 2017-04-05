@@ -1,3 +1,10 @@
+/*
+ * A note from Studio C 2017
+ * This code is in charge of making the dropdowns
+ * on the resources page of the libary work correctly.
+ * We did not write this, Studio C 2013 did.
+ */
+
 $(document).ready(function(){
 
 	/*DROP DOWNS*/

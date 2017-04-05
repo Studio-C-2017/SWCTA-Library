@@ -1,3 +1,4 @@
+/*
 function openMenu() {
   document.getElementsByClassName("menu").style.display = "block";
   document.getElementsByClassName("")
@@ -13,3 +14,4 @@ document.getElementById('search').addEventListener('input', function() {
   searchStyle.innerHTML = ".searchable:not([data-index*=\"" + this.value.toLowerCase() + "\"]) { display: none; }";
   // beware of css injections!
 });
+*/
