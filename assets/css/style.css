@@ -2,7 +2,6 @@
  * Studio C Library Website
  */
 
-<<<<<<< HEAD
  /* Color Scheme
 
  #F26E20 (dark orange)
@@ -29,13 +28,14 @@ initial styles
 ================*/
 @charset "UTF-8";
 
-body {
-  font-family: 'Adam CG Pro', serif;
-}
-
 @font-face {
    font-family: 'Adam CG Pro';
    src: url('../fonts/adam.cg.otf');
+}
+
+
+body {
+  font-family: 'Adam CG Pro', serif;
 }
 
 /*================
@@ -112,8 +112,6 @@ homepage styles
 header {
 }
 
-
-
 /*================
 about styles
 ================*/
@@ -178,4 +176,3 @@ Resources styles
 /*================
 course-help styles
 ================*/
->>>>>>> origin/master
