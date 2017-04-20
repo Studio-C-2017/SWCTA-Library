@@ -72,22 +72,25 @@ nav styles DO NOT CHANGE
 nav {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    width: 100%;
 }
 
 nav ul {
     display: flex;
     margin: 0;
+    text-align: center;
+    justify-content:space-around;
 }
 
 nav li {
     display: block;
-    text-align: center;
 }
 
 nav li a {
     padding: 8pt;
     display: block;
     text-decoration: none;
+    text-align: center;
 }
 
 nav li a:hover {
