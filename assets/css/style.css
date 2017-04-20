@@ -36,6 +36,7 @@ initial styles
 
 body {
   font-family: 'Adam CG Pro', serif;
+@import url('https://fonts.googleapis.com/css?family=Signika');
 }
 
 /*================
@@ -68,7 +69,9 @@ site-header styles
 }
 
 #site-header #hours {
+    
 }
+
 /*================
 mobile-header styles
 ================*/
@@ -83,22 +86,25 @@ nav styles DO NOT CHANGE
 nav {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    width: 100%;
 }
 
 nav ul {
     display: flex;
     margin: 0;
+    text-align: center;
+    justify-content:space-around;
 }
 
 nav li {
     display: block;
-    text-align: center;
 }
 
 nav li a {
     padding: 8pt;
     display: block;
     text-decoration: none;
+    text-align: center;
 }
 
 nav li a:hover {
@@ -176,3 +182,10 @@ Resources styles
 /*================
 course-help styles
 ================*/
+
+
+
+/* From Studio C 2013 */
+#linkList li dl dd {
+display: none;
+}

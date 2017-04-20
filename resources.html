@@ -9,26 +9,353 @@
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/mobile-nav-style.css" />
         <link rel="shortcut icon" type="image/png" href="icon.png" />
+
+        <!-- Note from Studio C 2017:
+        The following scripts come from the Studio C 2013 version of the site. It's in charge of the dropdowns on the resources page.
+        We're not completely sure how it works. -->
+    	<script src="assets/js/jquery.js"></script>
+    	<script>
+    		$(document).ready(function(){
+    			$('dl').click(function(){
+    				$('dd',this).slideToggle(function(){
+    				});
+    			});
+    		});
+    	</script>
+    	<script type="text/javascript" src="assets/js/dropdowns.js"></script>
+
     </head>
 
     <body>
 
-        <header>
-
-
+        <header id="site-header">
+            <img src="assets/img/SWCTA-Logo.png" alt="SWCTA Logo" />
+            <h1>Welcome to the Library</h1>
+            <div id="hours">
+                <h2>Hours</h2>
+                <br>  Monday - Thursday
+                  <br>  6:30AM - 4:00PM
+                  <br>  Friday
+                  <br>  6:30AM - 2:00PM
+            </div>
         </header>
 
         <nav>
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
-              <li><a href="course-help.html">Course Help</a></li>
-              <li><a href="job-help.html">Job Help</a></li>
               <li><a href="resources.html">Resources</a></li>
-              <li><a href="college-help.html">College Help</a></li>
-              <li><a href="databases.html">Databases</a></li>
+              <li><a href="college-center.html">College Center</a></li>
             </ul>
         </nav>
+
+        <main>
+            	<div class="resources">
+            		<h1>RESOURCES</h1>
+            		<div class="links">
+            			<div id="linksLeft">
+
+            				<div class="websiteHeader" id="site0">
+                  <a>ABC-CLIO</a>
+                </div>
+                  <div class="website" id="website0">
+                    <div class="websiteDescription">
+                      Username: clarkstudent
+            		  Password: clarkstudent
+                    </div>
+                  </div>
+            				<div class="websiteHeader" id="site1">
+                  <a>Brainfuse</a>
+                </div>
+                  <div class="website" id="website1">
+                    <div class="websiteDescription">
+                      Username:	[n/a]
+            		  Password:	achieve
+                    </div>
+                  </div>
+
+            			<div class="websiteHeader" id="site2">
+                  <a>Career Information System</a>
+                </div>
+                  <div class="website" id="website2">
+                    <div class="websiteDescription">
+                      Username:	ncis
+            		  Password:	nevada
+                    </div>
+                  </div>
+
+                  <div class="websiteHeader" id="site3">
+                  <a>CultureGrams</a>
+                </div>
+                  <div class="website" id="website3">
+                    <div class="websiteDescription">
+                      Username:	Nevada
+            		  Password:	silver
+                    </div>
+                  </div>
+
+
+
+            			</div>
+
+            			<div id="linksRight">
+            				<div class="websiteHeader" id="site4">
+                  <a>EBSCO</a>
+                </div>
+                  <div class="website" id="website4">
+                    <div class="websiteDescription">
+                      Username:	ccsd
+            		  Password:	password
+                    </div>
+                  </div>
+
+                 <div class="websiteHeader" id="site5">
+                  <a>CultureGrams</a>
+                </div>
+                  <div class="website" id="website5">
+                    <div class="websiteDescription">
+                      Username:	Nevada
+            		  Password:	silver
+                    </div>
+                  </div>
+
+                  		<div class="websiteHeader" id="site6">
+                  <a>TeachingBooks</a>
+                </div>
+                  <div class="website" id="website6">
+                    <div class="websiteDescription">
+                      Username:	ccsd
+            		  Password:	ccsd
+                    </div>
+                  </div>
+
+            				<div class="websiteHeader" id="site7">
+                  <a>World Book Online</a>
+                </div>
+                  <div class="website" id="website7">
+                    <div class="websiteDescription">
+                      Username:	ccsd2
+            		  Password:	ccsd2
+                    </div>
+                  </div>
+            			</div>
+            		</div>
+            		<div id="database">
+            			<input type="text" placeholder="search" id="search">
+            			<style id="search_style"></style>
+            			<script type="text/javascript" src="assets/js/script.js"></script>
+            			<ul id="linkList">
+            			  <li class="searchable" data-index="best books young adult library services">
+            			    <dl>
+            			      <dt>Best Books</dt>
+            			      <dd><a target="_new" href="http://www.ala.org/ala/mgrps/divs/yalsa/yalsa.cfm">Young Adult Library Services</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="clip art/image sites services classroom clip art flickr google images microsoft clip art pics 4 learning">
+            			    <dl>
+            			    	<dt>Clip Art/Image Sites</dt>
+            			      <dd><a target="_new" href="http://www.classroomclipart.com/">Classroom Clip Art</a></dd>
+            			      <dd><a target="_new" href="http://www.flickr.com/">Flickr</a></dd>
+            			      <dd><a target="_new" href="http://images.google.com/">Google Images</a></dd>
+            			      <dd><a target="_new" href="http://office.microsoft.com/en-us/images/?ofcresset=1">Microsoft Clip Art</a></dd>
+            			      <dd><a target="_new" href="http://pics4learning.com/">Pics 4 Learning</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="college planning and financial aid information college board college scholarships college view colleges and universities by state fafsa fasa pin request federal student aid scholarship searches zinch college admissions">
+            			    <dl>
+            			    	<dt>College Planning and Financial Aid Information</dt>
+            			      <dd><a target="_new" href="http://www.collegeboard.org/">College Board</a></dd>
+            			      <dd><a target="_new" href="http://www.fastweb.com/">College Scholarships</a></dd>
+            			      <dd><a target="_new" href="http://www.collegeview.com/index.jsp">College View</a></dd>
+            			      <dd><a target="_new" href="http://www.utexas.edu/world/univ/state/">Colleges and Universities by State</a></dd>
+            			      <dd><a target="_new" href="http://www.fafsa.ed.gov/">FAFSA</a></dd>
+            			      <dd><a target="_new" href="http://www.pin.ed.gov/PINWebApp/pinindex.jsp">FASA Pin Request</a></dd>
+            			      <dd><a target="_new" href="http://studentaid.ed.gov/PORTALSWebApp/students/english/index.jsp">Federal Student Aid</a></dd>
+            			      <dd><a target="_new" href="http://www.thepef.org/">Scholarship Searches</a></dd>
+            			      <dd><a target="_new" href="http://www.zinch.com/">Zinch College Admissions</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="databases abc-clio social studies databases career information system culturegrams ebsco periodical databases gale databases teaching books videostreaming">
+            			    <dl>
+            			    	<dt>Databases</dt>
+            			      <dd><a target="_new" href="http://www.socialstudies.abc-clio.com/">ABC-CLIO Social Studies Databases</a></dd>
+            			      <dd><a target="_new" href="http://nvcis.intocareers.org/">Career Information System</a></dd>
+            			      <dd><a target="_new" href="http://online.culturegrams.com/index.php">CultureGrams</a></dd>
+            			      <dd><a target="_new" href="http://search.ebscohost.com/">EBSCO Periodical Databases</a></dd>
+            			      <dd><a target="_new" href="http://infotrac.galegroup.com/itweb/sw_career">Gale Databases</a></dd>
+            			      <dd><a target="_new" href="http://www.teachingbooks.net/home">TeachingBooks</a></dd>
+            			      <dd><a target="_new" href="http://streaming.discoveryeducation.com/index.cfm?location=klvx">Videostreaming</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="digital books facts of file nevada encyclopedia salem health salem health home access salem history">
+            			    <dl>
+            			    	<dt>Digital Books</dt>
+            			      <dd><a target="_new" href="http://ebooks.infobasepublishing.com/default.aspx?InstID=951">Facts of file</a></dd>
+            			      <dd><a target="_new" href="http://onlinenevada.org/">Nevada Encyclopedia</a></dd>
+            			      <dd><a target="_new" href="http://health.salempress.com/">Salem Health</a></dd>
+            			      <dd><a target="_new" href="http://library.ccsd.net/common/servlet/[%20http://health.salempress.com/action/remoteAccessActivation%20]http://health.salempress.com/action/remoteAccessActivation">Salem Health Home Access</a></dd>
+            			      <dd><a target="_new" href="http://history.salempress.com/">Salem History</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="english links classical poetry complete works of shakespeare gale literary index knowing poe">
+            			    <dl>
+            			    	<dt>English Links</dt>
+            			      <dd><a target="_new" href="http://www.emule.com/poetry/">Classical Poetry</a></dd>
+            			      <dd><a target="_new" href="http://shakespeare.mit.edu/">Complete Works of Shakespeare</a></dd>
+            			      <dd><a target="_new" href="http://www.galenet.com/servlet/LitIndex;jsessionid=4F81B040F1E55C1CB69AA49EBB51AFB1">Gale Literary Index</a></dd>
+            			      <dd><a target="_new" href="http://knowingpoe.thinkport.org/default_flash.asp">Knowing Poe</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="entrepreneurship national federation of independent business nevada microenterprise initiative small business administration">
+            			    <dl>
+            			    	<dt>Entrepreneurship</dt>
+            			      <dd><a target="_new" href="http://www.nfib.com/">National Federation of Independent Business</a></dd>
+            			      <dd><a target="_new" href="http://www.4microbiz.org/">Nevada Microenterprise Initiative</a></dd>
+            			      <dd><a target="_new" href="http://www.sba.gov/">Small Business Administration</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="general reference copyright information dictionary of quotes how stuff works information please pro/con refdesk webster's dictionary">
+            			    <dl>
+            			    	<dt>General Reference</dt>
+            			      <dd><a target="_new" href="http://jisc-casper.org/public_repository/schools.html">Copyright Information</a></dd>
+            			      <dd><a target="_new" href="http://www.quotationreference.com/">Dictionary of Quotes</a></dd>
+            			      <dd><a target="_new" href="http://www.howstuffworks.com/">How Stuff Works</a></dd>
+            			      <dd><a target="_new" href="http://www.infoplease.com/">Information Please</a></dd>
+            			      <dd><a target="_new" href="http://www.procon.org/">Pro/Con</a></dd>
+            			      <dd><a target="_new" href="http://www.refdesk.com/">Refdesk</a></dd>
+            			      <dd><a target="_new" href="http://www.merriam-webster.com/">Webster's Dictionary</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="government central intelligence agency federal bureau of investigation federal government index u.s. house of representatives u.s. senate white house">
+            			    <dl>
+            			      <dt>Government</dt>
+            			      <dd><a target="_new" href="https://www.cia.gov/">Central Intelligence Agency</a></dd>
+            			      <dd><a target="_new" href="http://www.fbi.gov/">Federal Bureau of Investigation</a></dd>
+            			      <dd><a target="_new" href="http://www.usa.gov/">Federal Government Index</a></dd>
+            			      <dd><a target="_new" href="http://www.house.gov/">U.S. House of Representatives</a></dd>
+            			      <dd><a target="_new" href="http://www.senate.gov/">U.S. Senate</a></dd>
+            			      <dd><a target="_new" href="http://www.whitehouse.gov/">White House</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="health and physical education american council on exercise drug free metric conversion chart national institute of drug abuse teen's health world health organization">
+            			    <dl>
+            			      <dt>Health and Physical Education</dt>
+            			      <dd><a target="_new" href="http://www.acefitness.org/">American Council on Exercise</a></dd>
+            			      <dd><a target="_new" href="http://www.drugfree.org/">Drug Free</a></dd>
+            			      <dd><a target="_new" href="http://startcooking.com/blog/333/Measurement-and-Conversion-Charts">Metric Conversion Chart</a></dd>
+            			      <dd><a target="_new" href="http://www.nida.nih.gov/nidahome.html">National Institute of Drug Abuse</a></dd>
+            			      <dd><a target="_new" href="http://kidshealth.org/teen/">Teen's Health</a></dd>
+            			      <dd><a target="_new" href="http://www.who.int/en/">World Health Organization</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="history & geography cia world factbook national geographic us flags world constitution finder world flag database">
+            			    <dl>
+            			      <dt>History & Geography</dt>
+            			      <dd><a target="_new" href="https://www.cia.gov/library/publications/the-world-factbook/index.html">CIA World Factbook</a></dd>
+            			      <dd><a target="_new" href="http://www.nationalgeographic.com/">National Geographic</a></dd>
+            			      <dd><a target="_new" href="http://www.50states.com/flag/">US Flags</a></dd>
+            			      <dd><a target="_new" href="http://confinder.richmond.edu/">World Constitution Finder</a></dd>
+            			      <dd><a target="_new" href="http://www.flags.net/">World Flag Database</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="magazines newspapers cnn fox news las vegas review journal msnbc new york times time magazine usa today washington post">
+            			    <dl>
+            			      <dt>Magazines & Newspapers</dt>
+            			      <dd><a target="_new" href="http://www.cnn.com/">CNN</a></dd>
+            			      <dd><a target="_new" href="http://www.foxnews.com/">Fox News</a></dd>
+            			      <dd><a target="_new" href="http://www.lvrj.com/">Las Vegas Review Journal</a></dd>
+            			      <dd><a target="_new" href="http://www.msnbc.msn.com/">MSNBC</a></dd>
+            			      <dd><a target="_new" href="http://www.nytimes.com/">New York Times</a></dd>
+            			      <dd><a target="_new" href="http://www.time.com/time/">Time Magazine</a></dd>
+            			      <dd><a target="_new" href="http://www.usatoday.com/">USA Today</a></dd>
+            			      <dd><a target="_new" href="http://www.washingtonpost.com/">Washington Post</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="mathematics ask dr. math hotlist mathematics math goodies web math">
+            			    <dl>
+            			      <dt>Mathematics</dt>
+            			      <dd><a target="_new" href="http://mathforum.org/dr.math/">Ask Dr. Math</a></dd>
+            			      <dd><a target="_new" href="http://sln.fi.edu/tfi/hotlists/math.html">Hotlist: Mathematics</a></dd>
+            			      <dd><a target="_new" href="http://www.mathgoodies.com/">Math Goodies</a></dd>
+            			      <dd><a target="_new" href="http://www.webmath.com/">Web Math</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="medical professions family doctor mayo clinic medline national institute of health webmd">
+            			    <dl>
+            			      <dt>Medical Professions</dt>
+            			      <dd><a target="_new" href="http://familydoctor.org/online/famdocen/home.html">Family Doctor</a></dd>
+            			      <dd><a target="_new" href="http://www.mayoclinic.com/">Mayo Clinic</a></dd>
+            			      <dd><a target="_new" href="http://www.nlm.nih.gov/medlineplus/">Medline</a></dd>
+            			      <dd><a target="_new" href="http://www.nih.gov/">National Institute of Health</a></dd>
+            			      <dd><a target="_new" href="http://www.webmd.com/">WebMD</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="mythology encyclopedia of greek mythology gods heros and myth greek myths mythology encyclopedia">
+            			    <dl>
+            			      <dt>Mythology</dt>
+            			      <dd><a target="_new" href="http://www.mythweb.com/encyc/">Encyclopedia of Greek Mythology</a></dd>
+            			      <dd><a target="_new" href="http://www.gods-heros-myth.com/">Gods, Heros, and Myth</a></dd>
+            			      <dd><a target="_new" href="http://messagenetcommresearch.com/myths/">Greek Myths</a></dd>
+            			      <dd><a target="_new" href="http://www.pantheon.org/areas/mythology/">Mythology Encyclopedia</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="resume builders career builders monster jobs">
+            			    <dl>
+            			      <dt>Resume Builders</dt>
+            			      <dd><a target="_new" href="http://www.careerbuilder.com/">Career Builders</a></dd>
+            			      <dd><a target="_new" href="http://www.monster.com/">Monster Jobs</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="science american museum of natural history cells alive chemical elements loc science links minerals gemstones kingdom periodic table of elements periodic table of the elements science daily the weather channel">
+            			    <dl>
+            			      <dt>Science</dt>
+            			      <dd><a target="_new" href="http://www.amnh.org/">American Museum of Natural History</a></dd>
+            			      <dd><a target="_new" href="http://www.cellsalive.com/toc.htm">Cells Alive</a></dd>
+            			      <dd><a target="_new" href="http://www.chemicalelements.com/">Chemical Elements</a></dd>
+            			      <dd><a target="_new" href="http://www.loc.gov/rr/scitech/resources.html">LOC - Science Links</a></dd>
+            			      <dd><a target="_new" href="http://www.minerals.net/">Minerals & Gemstones Kingdom</a></dd>
+            			      <dd><a target="_new" href="http://www.gordonengland.co.uk/elements/earth.htm">Periodic Table of Elements</a></dd>
+            			      <dd><a target="_new" href="http://www.gordonengland.co.uk/elements/earth.htm">Periodic Table of the elements</a></dd>
+            			      <dd><a target="_new" href="http://www.sciencedaily.com/">Science Daily</a></dd>
+            			      <dd><a target="_new" href="http://www.weather.com/">The Weather Channel</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="teacher resources rubistar teaching strategies vegas pbs educational media center vegaspbs one place vegaspbs video streaming">
+            			    <dl>
+            			      <dt>Teacher Resources</dt>
+            			      <dd><a target="_new" href="http://rubistar.4teachers.org/index.php">Rubistar</a></dd>
+            			      <dd><a target="_new" href="http://www.beesburg.com/edtools/glossary.html">Teaching Strategies</a></dd>
+            			      <dd><a target="_new" href="http://media.klvx.org/">VegasPBS Educational Media Center</a></dd>
+            			      <dd><a target="_new" href="http://oneplace.vegaspbs.org/web/guest/home">VegasPBS One Place</a></dd>
+            			      <dd><a target="_new" href="http://www.vegaspbs.org/streaming/">VegasPBS Video Streaming</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="test prep act nv dept of education sat practice tests sat prep">
+            			    <dl>
+            			      <dt>Test Prep</dt>
+            			      <dd><a target="_new" href="http://www.act.org/">ACT</a></dd>
+            			      <dd><a target="_new" href="http://nde.doe.nv.gov/Assessment_HSPE.htm">NV Dept. of Education</a></dd>
+            			      <dd><a target="_new" href="http://sat.collegeboard.com/practice">SAT Practice Tests</a></dd>
+            			      <dd><a target="_new" href="http://www.ineedapencil.com/">SAT Prep</a></dd>
+            			    </dl>
+            			  </li>
+            			  <li class="searchable" data-index="writing aids apa mla style guides citation machine creating professional documents easybib how to write a term paper owl apa citation guide owl mla citation guide plagiarism tutorial">
+            			    <dl>
+            			      <dt>Writing Aids</dt>
+            			      <dd><a target="_new" href="http://valenciacc.edu/library/documentation.cfm">APA MLA Style Guides</a></dd>
+            			      <dd><a target="_new" href="http://www.citationmachine.net/">Citation Machine</a></dd>
+            			      <dd><a target="_new" href="http://owl.english.purdue.edu/owl/resource/681/01/">Creating Professional Documents</a></dd>
+            			      <dd><a target="_new" href="http://www.easybib.com/ebook">EasyBib</a></dd>
+            			      <dd><a target="_new" href="http://www.gale.cengage.com/free_resources/term_paper/index.htm">How to Write A Term Paper</a></dd>
+            			      <dd><a target="_new" href="http://owl.english.purdue.edu/owl/resource/560/01/">OWL APA Citation Guide</a></dd>
+            			      <dd><a target="_new" href="http://owl.english.purdue.edu/owl/search.php">OWL MLA Citation Guide</a></dd>
+            			      <dd><a target="_new" href="http://library.acadiau.ca/tutorials/plagiarism/">Plagiarism Tutorial</a></dd>
+            			    </dl>
+            			  </li>
+            			</ul>
+            		</div>
+            	</div>
+        </main>
 
 
         <footer>
