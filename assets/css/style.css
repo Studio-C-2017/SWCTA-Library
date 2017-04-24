@@ -1,13 +1,151 @@
 /*
  * Studio C Library Website
+ * By Studio C 2017
  */
 
- /* Color Scheme
-
+/* Colors
+ Dark Brown - #96530f
+ Light Brown - #c1a164
+ Gray - #b2b2b2
  #F26E20 (dark orange)
  #BB7733 (dark brown)
-
  */
+
+/*================
+Table of Contents
+1. initial styles
+2. universal styles
+3. nav styles
+4. Home Page styles
+5. about styles
+================*/
+
+/*================
+initial styles
+================*/
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+body {
+    font-family: 'Signika', sans-serif;
+}
+
+/*================
+universal styles BE CAREFUL
+================*/
+
+footer {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/*================
+site-header styles
+================*/
+#site-header {
+    display: flex;
+    height: 125px;
+}
+
+#site-header img {
+    height: 100%;
+}
+
+#site-header h1 {
+
+}
+
+#site-header #hours {
+
+}
+
+/*================
+mobile-header styles
+================*/
+
+#mobile-header {
+}
+
+/*================
+nav styles DO NOT CHANGE
+================*/
+
+nav {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+}
+
+nav li {
+    display: block;
+    text-align: center;
+}
+
+nav li a {
+    padding: 8pt;
+    display: block;
+    text-decoration: none;
+}
+
+nav li a:hover {
+}
+
+
+/*================
+Home Page styles
+================*/
+
+header {
+}
+
+
+
+/*================
+About styles
+================*/
+#about {
+
+}
+
+
+#our-librarian {
+
+}
+
+#our-librarian {
+
+}
+
+/*================
+Resources styles
+================*/
+
+
+/*================
+College Center styles
+================*/
+
+
+
+
+
+
+
+/* From Studio C 2013 */
+#linkList li dl dd {
+display: none;
+}
+
+
 
  @charset "UTF-8";
 
@@ -164,29 +302,4 @@ about styles
   position: relative;
   left: 5%;
   width: 40%;
-}
-
-/*================
-college styles
-================*/
-
-
-/*================
-Resources styles
-================*/
-
-
-/*
-
-
-*/
-/*================
-course-help styles
-================*/
-
-
-
-/* From Studio C 2013 */
-#linkList li dl dd {
-display: none;
 }
