@@ -1,6 +1,5 @@
 /*
  * Studio C Library Website
- * By Studio C 2017
  */
 
  /* Color Scheme
@@ -17,8 +16,11 @@ Table of Contents
 1. initial styles
 2. universal styles
 3. nav styles
-4. Home Page styles
+4. homepage styles
 5. about styles
+6. team styles
+7. work styles
+8. contact styles
 ================*/
 
 /*================
@@ -111,14 +113,14 @@ nav li a:hover {
 
 
 /*================
-Home Page styles
+homepage styles
 ================*/
 
 header {
 }
 
 /*================
-About styles
+about styles
 ================*/
 
 .page-title {
@@ -165,17 +167,22 @@ About styles
 }
 
 /*================
-Resources styles
+college styles
 ================*/
 
 
 /*================
-College Center styles
+Resources styles
 ================*/
 
 
+/*
 
 
+*/
+/*================
+course-help styles
+================*/
 
 
 
