@@ -31,6 +31,7 @@ body {
     font-family: 'Signika', sans-serif;
 }
 
+
 /*================
 universal styles BE CAREFUL
 ================*/
@@ -112,24 +113,56 @@ header {
 /*================
 About styles
 ================*/
+
+#about-wrapper{
+    padding: 0px 100px 100px 100px;
+}
+
 #about {
-
-}
-
-
-#our-librarian {
-
+    text-align: center;
+    margin: 100px;
 }
 
 #our-librarian {
+    padding-top: 15px;
+    text-align: left;
+    background-color: #99551A;
+    padding: 20px;
+    margin: 25px;
+}
 
+#our-library {
+    text-align: left;
+    background-color: #99551A;
+    padding: 20px;
+    margin: 25px;
 }
 
 /*================
 Resources styles
 ================*/
+.resources{
+    padding: 0px 100px 100px 100px;
+}
 
+.links{
+    text-align: center;
+    padding: 20px;
+    margin: 25px;
+}
 
+.websiteDescription{
+    color: #99551A;
+    text-transform: capitalize;
+}
+
+#database{
+    color: #99551A;
+}
+
+.websiteHeader{
+    margin: 10px;
+}
 /*================
 College Center styles
 ================*/
