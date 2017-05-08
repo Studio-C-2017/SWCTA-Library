@@ -146,76 +146,12 @@ display: none;
 }
 
 
-
- @charset "UTF-8";
-
-/*================
-Table of Contents
-1. initial styles
-2. universal styles
-3. nav styles
-4. homepage styles
-5. about styles
-6. team styles
-7. work styles
-8. contact styles
-================*/
-
-/*================
-initial styles
-================*/
-@charset "UTF-8";
-
-@font-face {
-   font-family: 'Adam CG Pro';
-   src: url('../fonts/adam.cg.otf');
-}
-
-
-body {
-  font-family: 'Adam CG Pro', serif;
-@import url('https://fonts.googleapis.com/css?family=Signika');
-}
-
-/*================
-universal styles BE CAREFUL
-================*/
-
-footer {
-    text-transform: uppercase;
-    text-align: center;
-}
-
-footer a {
-    text-decoration: none;
-}
-
 /*================
 site-header styles
 ================*/
-#site-header {
-    display: flex;
-    height: 125px;
-}
 
-#site-header img {
-    height: 100%;
-}
 
-#site-header h1 {
 
-}
-
-#site-header #hours {
-
-}
-
-/*================
-mobile-header styles
-================*/
-
-#mobile-header {
-}
 
 /*================
 nav styles DO NOT CHANGE
